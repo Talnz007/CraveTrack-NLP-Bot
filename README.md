@@ -15,7 +15,7 @@
   - **Store Hours Feature:** Adds functionality to query store hours.
 
 ## Demo
-Watch the [video demo](#https://drive.google.com/drive/folders/1uUNDz-n5KuNtAf4DU0mQmC8i377lSPTp?usp=sharing) to see CraveTrack in action:
+Watch the [video demo](https://drive.google.com/drive/folders/1uUNDz-n5KuNtAf4DU0mQmC8i377lSPTp?usp=sharing) to see CraveTrack in action:
 1. Chatbot on the demo site.
 2. Mid-order issue demonstration and fix.
 3. Store hours feature demo.
