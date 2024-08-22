@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#home">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+
+        <section id="home">
+            <img src="Walden.png">
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="grid-container">
+                <img src="MENU1.png" alt="Menu item 1">
+                <img src="MENU2.png" alt="Menu item 2">
+                <img src="MENU3.png" alt="Menu item 3">
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <p>Islamabad, Pakistan</p>
+        </section>
+
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <p>Got questions? Want to place an order? Call us at +92791234567 or email us at info@fastfood.com</p>
+        </section>
+
+        <!-- Chatbot iframe -->
+        <iframe class="chat-bot" id="chatBotIframe" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/2d9d7ef1-649c-4338-aa7b-6d7df32b0089"></iframe>
+
+        <!-- Close Button for the chatbot -->
+        <div class="close-chat" id="closeChatBtn">&times;</div>
+    </div>
+
+    <script>
+        // Get references to the chatbot and close button
+        const chatBot = document.getElementById('chatBotIframe');
+        const closeChatBtn = document.getElementById('closeChatBtn');
+
+        // Function to show the chatbot after a delay
+        window.onload = function() {
+            setTimeout(function() {
+                chatBot.classList.add('active');
+            }, 1000); // Delay the appearance of the chatbot by 1 second
+        };
+
+        // Close chatbot when the close button is clicked
+        closeChatBtn.addEventListener('click', function() {
+            chatBot.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
